@@ -1,13 +1,17 @@
+#' ---
+#' output: github_document
+#' ---
+
 #' Which libraries does R search for packages?
 .libPaths()
 
 #' Installed packages
 
 ## use installed.packages() to get all installed packages
-pckgs <- as.data.frame(installed.packages())
+pkg <- as.data.frame(installed.packages())
 
 ## how many packages?
-nrow(pckgs)
+nrow(pkg)
 
 #' Exploring the packages
 summary(pkg)
